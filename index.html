@@ -68,7 +68,7 @@ input{
 }
 input::placeholder{
     font-family: montserrat;
-    color: #000;
+    color: black;
     font-size: 1rem;
     align-items: center;
 }
@@ -90,11 +90,11 @@ h1{
     <form action="" name="myForm">
         <h1 style="font-family:montserrat;">BMI CALCULATOR</h1>
         <label for="mass">Mass</label>
-        <input type="text" name="mass" id="mass">
+        <input type="text" name="mass" id="mass" placeholder ="enter mass" >
 
         <label for="height">Height(meters
 )</label>
-        <input type="text" name="height" id="height">
+        <input type="text" name="height" id="height" placeholder="enter height" >
         <button type="submit">Calculate BMI</button>
         <p id="answer"></p>
         <p id="copyright" style="font-family:montserrat;"></p>
