@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body{
+            /* background-color: #4F6CFF; */
+            background-color: #000;
+        }
+        form {
+            background-color: #A54BFF;
+            padding: 50px;
+            text-align: center;
+            position: absolute;
+            width: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            border-radius: 28px;
+            box-shadow: 5px 2px 2px #A576FF inset;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4F6CFF;
+            color: white;
+            font-size: 1.4rem;
+            outline: none;
+            border: none;
+            width: auto;
+            border-radius: 10px;
+            /* margin-left: 20vh; */
+            font-family: montserrat !important;
+        }
+        button:hover{
+    background-color: #5ca4ff;
+}
+label{
+    margin-top: 15px;
+    color: #efefe5;
+    font-size: 1.4rem;
+    font-family: montserrat;
+}
+input{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-family: montserrat;
+    color: #000;
+    font-size: 1rem;
+    background-color: #5ca4ff;
+}
+input::placeholder{
+    font-family: montserrat;
+    color: #000;
+    font-size: 1rem;
+    align-items: center;
+}
+input:active{
+    background-color: #5ca4ff;
+}
+
+#answer{
+    color: #fff;
+    background-color: #A576ff;
+    font-size: 1.4rem;
+    border-radius: 9px;
+    padding: 10px 5px;
+    font-family: montserrat;
+
+}
+h1{
+    color: #efefef;
+}
+    </style>
+     
+    <form action="" name="myForm">
+        <h1 style="font-family:montserrat;">BMI CALCULATOR</h1>
+        <label for="mass">Mass</label>
+        <input type="text" name="mass" id="mass">
+
+        <label for="height">Height(m)</label>
+        <input type="text" name="height" id="height">
+        <button type="submit">Calculate</button>
+        <p id="answer"></p>
+        <p id="copyright" style="font-family:montserrat;"></p>
+    </form>
+    
+    <script src="bmi.js"></script>
+</body>
+
+</html>
